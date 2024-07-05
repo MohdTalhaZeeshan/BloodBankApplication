@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style type="text/css">
+
+*{
+padding: 0;
+margin: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("blood10.jpg");
+	background-size: 100vw 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+  width: 25%;
+  height: 75%;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;	
+}
+
+input {
+	width: 20vw;
+	height: 3vw;
+	border: none;
+	outline: none;
+	font-size: 1vw;
+	text-align: center;
+	border-radius: 10px;
+	letter-spacing: 4px;
+}
+
+#button{
+width: 10vw;
+background-color: aqua;
+
+}
+
+#button:hover
+{
+background-color:silver;
+cursor: pointer;
+}
+</style>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="search">
+<h1> Search For Donors </h1>
+<input placeholder="Enter Your State" name="state" required="required">
+ 
+<input placeholder="Enter Your City" name="city" required="required">
+
+<input placeholder="Enter Your Area" name="area"required="required">
+
+<input placeholder="Enter Your Blood Group" name="bloodgroup" required="required">
+
+<input  id="button" type="submit" value="search">
+</form>
+
+</body>
+</html>
